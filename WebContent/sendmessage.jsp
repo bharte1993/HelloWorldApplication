@@ -8,6 +8,7 @@
 </head>
 <body>
 <form action="hello-world" method="get">
+  Write Message<input type="text" name="message">
   <input type ="submit" value="Send Message"/>
 </form>
 

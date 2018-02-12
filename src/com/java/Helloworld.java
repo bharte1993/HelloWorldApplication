@@ -8,7 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Helloworld extends HttpServlet {
    protected void doGet(HttpServletRequest request , HttpServletResponse response) throws IOException,ServletException {
-		request.setAttribute("message", "Hello World");
+	    String Message=request.getParameter("message");
+		request.setAttribute("message",Message);
 		request.getRequestDispatcher("/showhelloWorld.jsp").forward(request,response);
 		}
 }
