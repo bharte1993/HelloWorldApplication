@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/hello-world" method="get">
+<form action="hello-world" method="get">
   <input type ="submit" value="Send Message"/>
 </form>
 
