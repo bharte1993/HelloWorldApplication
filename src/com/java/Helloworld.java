@@ -7,9 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class Helloworld extends HttpServlet {
-   protected void doGet(HttpServletRequest request , HttpServletResponse response) throws IOException,ServletException {
+   protected void doPost(HttpServletRequest request , HttpServletResponse response) throws IOException,ServletException {
 	    String Message=request.getParameter("message");
-		request.setAttribute("message",Message);
-		request.getRequestDispatcher("/showhelloWorld.jsp").forward(request,response);
+		request.setAttribute("message", Message);
+		request.getRequestDispatcher("/showHelloWorld.jsp").forward(request,response);
 		}
 }
